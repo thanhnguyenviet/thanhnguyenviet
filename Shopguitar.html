@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+    <style>
+       * {
+margin: 0;
+padding: 0;
+    
+}
+header{
+    width: 1300px;
+    margin: -50px;
+}
+    .header{  
+          width: 100%;
+        margin: 0 auto;
+       
+        overflow: auto;
+    }
+
+.header .logo img{
+        width: 200px;
+        float: left;
+}
+.header .tieude{
+    text-align: left;
+    font-size: 30px;
+    font-weight: bold;
+    padding-top:100px;
+    color: darkcyan;
+}
+body{
+ 
+    font-family: 'Lato', sans-serif;
+     background-color: plum;
+     -webkit-animation-name: example; 
+    -webkit-animation-duration: 4s; 
+    animation-name: example;
+    animation-duration: 5s;
+
+}
+        @-webkit-keyframes example {
+    0% {background-color: palevioletred;}
+    25% {background-color: tomato;}
+    50% {background-color: pink;}
+    100% {background-color: purple;}
+  }
+  @keyframes example {
+    0% {background-color: palevioletred;}
+    25% {background-color: tomato;}
+    50% {background-color: pink;}
+    100% {background-color: indigo;}
+  }
+
+.clearfix:after {
+    display:block;
+    clear:both;          
+}
+.wrapper {
+    width:100%;
+    box-shadow:0px 1px 3px rgba(0,0,0,0.2); 
+    background:#3e3436;
+    margin-top: -130px;
+}
+ 
+/*Menu*/
+.menu {
+    width:1000px;
+    margin:0px auto;
+    background:#bf5c71;
+    height: 50px;
+    margin-top: 150px;
+}
+.menu li {
+    margin:0px;
+    list-style:none;
+    font-family:'Ek Mukta';
+}
+.menu a {
+    transition:all linear 0.15s;
+    color:#919191;
+    text-decoration:none;
+}
+.menu li:hover > a, .menu .current-item > a {
+    text-decoration:none;
+    color:#be5b70;
+} 
+.menu .arrow {
+    font-size:11px;
+    line-height:0%;
+} 
+
+.menu > ul > li {
+    float: none;
+    display:inline-block;
+    position:relative;
+    font-size:19px;
+}
+.menu > ul > li > a {
+    padding:10px 40px;
+    display:inline-block;
+    color:white;
+}
+.menu > ul > li:hover > a, .menu > ul > .current-item > a {
+    background:#2e2728;
+}
+
+.menu li:hover .sub-menu {
+    z-index:1;
+    opacity:1;
+}
+.sub-menu {
+    width:160%;
+    padding:5px 0px;
+    position:absolute;
+    top:100%;
+    left:0px;
+    z-index:-1;
+    opacity:0;
+    transition:opacity linear 0.15s;
+    box-shadow:0px 2px 3px rgba(0,0,0,0.2);
+    background:#2e2728;
+}
+.sub-menu li {
+    display:block;
+    font-size:16px;
+}
+.sub-menu li a {
+    padding:10px 30px;
+    display:block;
+}
+html{
+    width:100%;    
+    height: 100%;
+}
+
+/* Phần ảnh  */
+.container{
+    cursor: pointer;
+    width: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    bottom: -50%;
+    transform: translate(-50%,-50%);
+    margin-top: -400px;
+    margin-bottom: 1000px;
+}
+img {
+width: 100%;
+height: auto;
+transition: all ease-in-out ;
+
+}
+
+.img {
+width: 300px;
+height: 225px;
+position: relative;
+
+overflow: hidden;
+}
+.container .img 
+{
+    margin: 5px 5px 5px 5px;
+}
+
+.txt {
+width: 100%;
+height: 100%;
+background-color: rgba(0, 0, 0, 0.52);
+position: absolute;
+bottom:51px;
+text-align: center;
+color: white;
+padding:10px;
+box-sizing: border-box;
+opacity: 0;
+font-weight: bolder;
+}
+.img:hover div.txt {
+opacity: 1;
+transform: translateY(50px);
+transition:ease-in-out 0.5s;
+}
+
+.img:hover img {
+transform: scale(1.5);
+transition: all ease-in-out 0.5s;
+}
+.footer
+{
+    margin-top: 600px;
+    padding: 0%;
+text-align: center;
+}
+.footer p
+{
+    font-size: 20px;
+    font-family: cursive;
+    color: lightyellow;
+}
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="logo">
+            <img src="https://image.freepik.com/free-vector/rhythm-guitar-logo-template-vector_83738-221.jpg"
+                alt="HQmusical">
+            <div class="tieude">HQmusical</div>
+        </div>
+
+        <div class="container">
+            <div class="img">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTXdR1n4RS0W5NBp7e1kdlnFVh_wCQIFDcujA&usqp=CAU"
+                    alt="">
+                <a href="Chitiet.html">
+                    <div class="txt">
+                        <h3>Đàn Guitar</h3>
+
+                    </div>
+                </a>
+            </div>
+            <div class="img">
+                <img src="https://file.hstatic.net/1000093576/file/an-organ-yamaha-psr-e363-chinh-hang_-gia-uu-dai-tai-loan-phuong-thao-1_ce58155f74a94dd8a28185fd92019ddc_grande.jpg"
+                    alt="">
+                <a href="Chitiet.html">
+                    <div class="txt">
+                        <h3>Đàn Organ</h3>
+
+                    </div>
+                </a>
+            </div>
+            <div class="img">
+                <img src="https://images-na.ssl-images-amazon.com/images/I/71KXQk8QiAL._AC_SX466_.jpg" alt="">
+                <a href="Chitiet.html">
+                    <div class="txt">
+                        <h3>Drum</h3>
+                    </div>
+                </a>
+            </div>
+            <div class="img">
+                <img src="https://cf.shopee.vn/file/f8b96e8789e50c3923e0b6344b218796" alt="">
+                <a href="Chitiet.html">
+                    <div class="txt">
+                        <h3>Flute</h3>
+
+                    </div>
+                </a>
+            </div>
+            <div class="img">
+                <img src="https://file.hstatic.net/1000093576/file/ban-dan-violin-kapok-mv005-3-4_grande.jpg" alt="">
+                <a href="Chitiet.html">
+                    <div class="txt">
+                        <h3>Violin</h3>
+
+                    </div>
+                </a>
+            </div>
+            <div class="img">
+                <img src="https://musicgallery.com.np/wp-content/uploads/2018/11/accessories.jpg" alt="">
+                <a href="Chitiet.html">
+                    <div class="txt">
+
+                        <h3>Musical accessories</h3>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+    </div>
+    <div class="wrapper">
+        <nav class="menu">
+            <ul class="clearfix">
+                <li><a href="#">Trang chủ</a></li>
+                <li>
+                    <a href="#">Sản phẩm <span class="arrow">&#9660;</span></a>
+
+                    <ul class="sub-menu">
+                        <li><a href="#">Guitar</a></li>
+                        <li><a href="#">Organ</a></li>
+                        <li><a href="#">Drum</a></li>
+                        <li><a href="#">Flute </a></li>
+                        <li><a href="#">Violin </a></li>
+                        <li><a href="#">Acessories</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Dịch vụ</a></li>
+                <li><a href="#">Liên hệ</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="footer">
+        <p>Cảm ơn đã ghé thăm Shop</p>
+    </div>
+</body>
+
+</html>

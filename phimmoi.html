@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Phim Mới | Phim hay | Xem phim nhanh | Xem phim online | Phim HD vietsub
+      hay nhất
+    </title>
+
+   <style>
+    .img3 img {
+  width: 50px;
+  height: 50px;
+}
+body {
+  background-color: rgb(58, 57, 63);
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  width: 1100px;
+  align-items: center;
+  margin-left: 15%;
+}
+.body {
+  width: 1100px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
+  background: #3e3436;
+  margin-top: -130px;
+  margin-left: 15%;
+}
+
+/*Menu*/
+.menu {
+  width: 1200px;
+  margin: -5%;
+  background: rgb(50, 48, 49);
+  height: 50px;
+  margin-top: 150px;
+}
+.menu li {
+  margin: 0px;
+  list-style: none;
+  font-family: "Arial";
+}
+.menu a {
+  transition: all linear 0.15s;
+  color: #919191;
+  text-decoration: none;
+}
+.menu li:hover > a,
+.menu .current-item > a {
+  text-decoration: none;
+  color: white;
+}
+.menu .arrow {
+  font-size: 11px;
+  line-height: 0%;
+}
+
+.menu > ul > li {
+  float: none;
+  display: inline-block;
+  position: relative;
+  font-size: 17px;
+}
+.menu > ul > li > a {
+  padding: 10px 10px;
+  display: inline-block;
+  color: white;
+}
+.menu > ul > li:hover > a,
+.menu > ul > .current-item > a {
+  background: rgb(58, 57, 63);
+}
+
+.menu li:hover .sub-menu {
+  z-index: 1;
+  opacity: 1;
+  scale: 1.1;
+}
+.sub-menu {
+  width: 300px;
+  padding: 5px 5px;
+  position: absolute;
+  top: 100%;
+  left: 0px;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity linear 0.15s;
+  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.2);
+  background: rgb(58, 57, 63);
+  text-align: center;
+}
+.sub-menu li {
+  display: block;
+  font-size: 16px;
+  color: white;
+}
+.sub-menu li a {
+  padding: 10px 30px;
+  display: block;
+}
+
+.mainimg img {
+  width: 1100px;
+}
+
+.sub-menu2 {
+  width: 100px;
+  padding: 5px 5px;
+  position: absolute;
+  top: 100%;
+  left: 0px;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity linear 0.15s;
+  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.2);
+  background: white;
+}
+.sub-menu2 li {
+  display: block;
+  font-size: 16px;
+  color: white;
+}
+.sub-menu2 li a {
+  padding: 10px 30px;
+  display: block;
+  color: white;
+}
+.logo img {
+  width: 200px;
+}
+
+.sub-menu table tr th,
+td {
+  color: white;
+}
+
+.container {
+  cursor: pointer;
+  width: 900px;
+  display: flex;
+  flex-wrap: wrap;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  bottom: -50%;
+  transform: translate(-50%, -50%);
+  margin-top: -110px;
+  margin-bottom: 1000px;
+  justify-content: space-between;
+}
+img {
+  width: 100%;
+  height: auto;
+  transition: all ease-in-out;
+  display: flex;
+  justify-content: space-between;
+}
+
+.img {
+  width: 180px;
+  height: 240px;
+  position: relative;
+  overflow: hidden;
+}
+.container .img {
+  margin: 5px 5px 5px 5px;
+}
+
+.panel {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.52);
+  position: absolute;
+  bottom: 51px;
+  padding: 10px;
+  box-sizing: border-box;
+  opacity: 0;
+}
+.img:hover div.panel {
+  opacity: 1;
+  transform: translateY(50px);
+  transition: ease-in-out 0.5s;
+}
+
+.img:hover img {
+  transform: scale(1.5);
+  transition: all ease-out 0.5s;
+}
+.searcher {
+  margin-right: 400px;
+}
+.container0 {
+  cursor: pointer;
+  width: 1000px;
+  display: flex;
+  flex-wrap: wrap;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  bottom: -50%;
+  transform: translate(-50%, -50%);
+  margin-top: -400px;
+  margin-bottom: 1000px;
+  justify-content: space-between;
+}
+.img1 {
+  width: 100%;
+  height: auto;
+  transition: all ease-in-out;
+  display: flex;
+  justify-content: space-between;
+}
+
+.img1 {
+  width: 210px;
+  height: 280px;
+  position: relative;
+  overflow: hidden;
+}
+.container .img1 {
+  margin: 5px 5px 5px 5px;
+}
+
+.img1:hover div.panel {
+  opacity: 1;
+  transform: translateY(50px);
+  transition: ease-in-out 0.5s;
+}
+
+.img1:hover img {
+  transform: scale(1.5);
+  transition: all ease-out 0.5s;
+}
+
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <div class="logo">
+        <img src="https://i.ytimg.com/vi/LmdBDc1TPKM/hqdefault.jpg" alt="" />
+      </div>
+      <div class="searcher">
+        <div class="container-1">
+          <span class="icon"><i class="fa fa-search"></i></span>
+          <input type="search" id="search" placeholder="Tìm:Tên phim, đạo diễn, diễn viên" 
+          width="200px"
+          />
+        </div>
+      </div>
+
+
+      </div>
+    </div>
+
+    <div class="body">
+      <div class="menu">
+        <nav>
+          <nav class="menu">
+            <ul class="clearfix">
+              <li><a href="#">PHIM MỚI ZZ</a></li>
+              <li>
+                <a href="#">THỂ LOẠI </a>
+
+                <div class="sub-menu">
+                  <table>
+                      <tr>
+                        <td> <a href="#">Hành động </a> </td>
+                        <td> <a href="#">Viễn tưởng</a> </td>
+                        <td> <a href="#">Chiến tranh</a></td>
+                      
+                      </tr>
+                      <tr>
+                        <td > <a href="#">Hình sự</a> </td>
+                        <td><a href="#">Phiêu lưu</a></td>
+                        <td> <a href="#">  Võ thuật</a></td>
+             
+                      </tr>
+                  </table>
+                </div>
+              </li>
+              <li><a href="#">QUỐC GIA</a>
+                <div class="sub-menu">
+                    <table>
+                
+                        <tr>
+                          <td>Việt Nam</td>
+                          <td>Trung Quốc</td>
+                          <td>Mỹ</td>
+                          <td>Hàn quốc</td>
+                        </tr>
+                        <tr>
+                          <td>Nhật Bản</td>
+                          <td>Hong Kong</td>
+                          <td>Ấn Độ</td>
+                          <td>Thái Lan</td>
+                        </tr>
+                        <tr>
+                          <td>Pháp</td>
+                          <td>Đài Loan</td>
+                          <td>Úc</td>
+                          <td>Anh</td>
+                        </tr>
+                        <tr>
+                          <td>Canada</td>
+                          <td>Quốc gia khác</td>
+                          <td>&nbsp;</td>
+                          <td>&nbsp;</td>
+                        </tr>
+                        
+                    </table>
+                  </div>
+            </li>
+              <li>
+                <a href="#">PHIM LẺ</a>
+                <div class="sub-menu">
+                    <table>
+                     
+                        <tr>
+                          <td style="width: 110px;">Phim lẻ 2020</td>
+                          <td style="width:110px;">Phim lẻ 2018</td>
+                          <td>Phim lẻ 2016</td>
+                     
+                        </tr>
+                        <tr>
+                            <td>Phim lẻ 2019</td>
+                            <td>Phim lẻ 2017</td>
+                            <td >Phim lẻ 2015</td>
+                          
+                        </tr>
+                    </table>
+                  </div>
+                
+              </li>
+
+              <li>
+                <a href="#">PHIM BỘ</a>
+                <div class="sub-menu">
+                  <table>
+                   
+                      <tr>
+                        <td>Hàn Quốc</td>
+                        <td>Trung quốc</td>
+                        <td>Thái Lan</td>
+                   
+                      </tr>
+                      <tr>
+                        <td>Hồng Kong</td>
+                        <td>Đài Loan</td>
+                        <td>Mỹ</td>
+                        
+                      </tr>
+                  </table>
+                </div>
+              </li>
+              
+              <li>
+                <a href="#">PHIM THUYẾT MINH</a>
+              </li>
+              <li>
+                <a href="#">PHIM CHIẾU RẠP</a>
+               
+ </li>
+              <li><a href="#">TRAILER</a></li>
+              <li><a href="#">TOP IMDB 2019</a></li>
+            </ul>
+          </nav>
+        </nav>
+      </div>
+    </div>
+
+ <div> <h1 style="color: white; font-size: large; margin-top:150px;margin-left:200px;">PHIM ĐỀ CỬ</h1></div>
+ <div class="container0">
+    <div class="img1">
+        <img src="http://image.phimmoizz.net/film/11365/poster.medium.jpg"  alt="">
+        <a href="Chitiet.html">
+            <div class="panel"> 
+                <div style="color: white; text-align: center;">Bán đảo Penisula</div>
+            </div>
+        </a>
+        <div class="tenphim">Bán đảo Penisula</div>
+    </div>
+    <div class="img1">
+        <img src="http://image.phimmoizz.net/film/11365/poster.medium.jpg" alt="">
+        <a href="Chitiet.html">
+            <div class="panel"> 
+                <div style="color: white; text-align: center;">Bán đảo Penisula</div>
+            </div>
+        </a>
+        <div class="tenphim">Bán đảo Penisula</div>
+    </div>
+    <div class="img1">
+        <img src="http://image.phimmoizz.net/film/11365/poster.medium.jpg" alt="">
+        <a href="Chitiet.html">
+            <div class="panel"> 
+                <div style="color: white; text-align: center;">Bán đảo Penisula</div>
+            </div>
+        </a>
+        <div class="tenphim">Bán đảo Penisula</div>
+    </div>
+    <div class="img1">
+        <img src="http://image.phimmoizz.net/film/11365/poster.medium.jpg" alt="">
+        <a href="Chitiet.html">
+            <div class="panel"> 
+                <div style="color: white; text-align: center;">Bán đảo Penisula</div>
+            </div>
+        </a>
+        <div class="tenphim">Bán đảo Penisula</div>
+    </div>
+    
+ </div>
+ 
+    <div> <h1 style="color: white; font-size: large; margin-top:280px;margin-left:250px;">PHIM CHIẾU RẠP MỚI</h1></div>
+   
+
+    <section>
+    <div class="container">
+        <div class="img">
+            <img src="http://image.phimmoizz.net/film/11047/poster.medium.jpg"
+                alt="">
+            <a href="Chitiet.html">
+                <div class="panel">
+                  
+                    <div style="color: white; text-align: center;">Bán đảo Penisula</div>
+                </div>
+            </a>
+        </div>
+        <div class="img">
+            <img src="http://image.phimmoizz.net/film/11355/poster.medium.jpg"
+                alt="">
+            <a href="Chitiet.html">
+                <div class="panel">
+                    <div style="color: white; text-align: center;">Bán đảo Penisula</div>
+            
+
+                </div>
+            </a>
+        </div>
+        <div class="img">
+            <img src="http://image.phimmoizz.net/film/11307/poster.medium.jpg" alt="">
+            <a href="Chitiet.html">
+                <div class="panel">
+                    <div style="color: white; text-align: center;">Bán đảo Penisula</div>
+                
+                </div>
+            </a>
+        </div>
+        <div class="img">
+            <img src="http://image.phimmoizz.net/film/11353/poster.medium.jpg" alt="">
+            <a href="Chitiet.html">
+                <div class="panel">
+                    <div style="color: white; text-align: center;">Bán đảo Penisula</div>
+
+                </div>
+            </a>
+        </div>
+        <div class="img">
+            <img src="http://image.phimmoizz.net/film/11325/poster.medium.jpg" alt="">
+            <a href="Chitiet.html">
+                <div class="panel">
+                    <div style="color: white; text-align: center;">Bán đảo Penisula</div>
+                   
+
+                </div>
+            </a>
+        </div>
+        <div class="img">
+            <img src="http://image.phimmoizz.net/film/11365/poster.medium.jpg" alt="">
+            <a href="Chitiet.html">
+                <div class="panel"> 
+                    <div style="color: white; text-align: center;">Bán đảo Penisula</div>
+                </div>
+            </a>
+            <div class="tenphim">Bán đảo Penisula</div>
+        </div>
+        <div class="img">
+            <img src="http://image.phimmoizz.net/film/11365/poster.medium.jpg" alt="">
+            <a href="Chitiet.html">
+                <div class="panel">
+
+                    <div style="color: white; text-align: center;">Bán đảo Penisula</div>
+                </div>
+
+            </a>
+           
+        </div>
+        <div class="img">
+            <img src="http://image.phimmoizz.net/film/11365/poster.medium.jpg" alt="">
+            <a href="Chitiet.html">
+                <div class="panel">
+
+                    <div style="color: white; text-align: center;">Bán đảo Penisula </div>
+                </div>
+            </a>
+
+    
+        </div>
+       
+    </div>
+    
+
+
+    </div>
+
+    
+
+</div>
+
+ </section>
+ 
+ 
+    <div></div>
+    <div></div>
+  </body>
+</html>
